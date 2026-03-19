@@ -28,7 +28,7 @@ input {
 #btn-curtir {
   width: 100%;
   padding: 10px;
-  background: #e67e22;
+  background: #50e622;
   border: none;
   color: white;
   cursor: pointer;
@@ -39,7 +39,7 @@ input {
 #btn-reset{
   width: 100%;
   padding: 10px;
-  background: #c12c2c;
+  background: #ff0000;
   border: none;
   color: white;
   cursor: pointer;
