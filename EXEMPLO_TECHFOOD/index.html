@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo TechFood - Grid + Media Query</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    
+    <header id="topo-loja">
+        <h1> TechFood -Sabor e Saber</h1>
+<!-- serve para criar uma caixa que é o menu hamburguer -->
+        <input type="checkbox" id="bt_menu">
+        <!-- ela é o icone do checkbox  menu hamburguer =   -->
+        <label for="bt_menu" id="label_menu"> &#9776</label>
+
+        <nav id="menu">
+            <ul>
+
+            <li>  <a href="#secao-massas">Massas</a></li>
+            <li><a href="#secao-sobremesas">Sobremesas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="secao-massas">
+            <h2 class="titulo-secao"> Nossas Massas</h2>
+            <div class="vitrine-grid"> <!--para controlar os articles por section para os conteudos-->
+                <article class="card">
+                    <img src="src/img/lasanha_bolonhesa.jpg" alt="lasanha de frango">
+                    <h3>Lasanha_bolonhesa</h3>
+                    <p class="desc">Massa artesanal, lasanha com o molho da casa e um delicioso recheio cremoso além de uma grande abundancia de queijo! </p>
+                    <span class="preco"> R$40,00</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+
+    <article class="card">
+                    <img src="src/img/nhoque.jpg" alt="Nhoque recheado de queijo">
+                    <h3>Nhoque rechado de queijo</h3>
+                    <p class="desc">Massa artesanal de batata, com o molho da casa e um delicioso recheio de queijo com temperos especiais da casa! </p>
+                    <span class="preco">R$ 40</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <div class="imagens"><img src="src/img/macarrao1.jpg" alt="lasanha de frango"></div>
+                    <h3>Lasanha de frango</h3>
+                    <p class="desc">Massa artesanal, lasanha com o molho da casa e um delicioso frango cremoso além de uma grande abundancia de queijo! </p>
+                    <span class="preco"> R$50,00</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+            </div>
+        </section>
+
+
+         <section id="secao-sobremesas">
+            <h2 class="titulo-secao"> Nossas Sobremesas</h2>
+            <div class="vitrine-grid">
+                <article class="card">
+                    <div class="imagens"><img src="src/img/pudim.jpg" alt="Pudim de Leite"></div>
+                    <h3>Pudim de leite</h3>
+                    <p class="desc">Um classico com calda de caramelo, testura macia que disolve na boca! </p>
+                    <span class="preco"> R$15,00</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <div class="img1"><img src="src/img/brownie.jpg" alt="Brownie com sorvete"></div>
+                    <h3>Brownie com sorvete</h3>
+                    <p class="desc">com chocolate belga e um delicioso sorvete de baunilhaaaaaaaaaa aaaaaaa! </p>
+                    <span class="preco">R$ 20,00</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <img src="src/img/torta.jpg" alt="lasanha de frango">
+                    <h3>Torta de limão</h3>
+                    <p class="desc">Massa crocante com um delicioso recheio refrescante de limão! </p>
+                    <span class="preco"> R$50,00</span>
+                    <button class="bt_pedido"> Pedir agora</button>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="rodape">
+        <div class="info-footer">
+            <p><strong> TechFood 2026 &#169</strong></p>
+            <p> Rua das Gostosuras 545, JD Comilança- Salto</p>
+
+        </div>
+
+    </footer>
+    <script src="src/script_aula04/aula_04.js "></script> <!-- Aula  04 -->
+</body>
+</html>

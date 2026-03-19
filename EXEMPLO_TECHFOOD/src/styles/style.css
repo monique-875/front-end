@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#topo-loja {
+  background-color: #20a516;
+  color: #ffe605;
+  padding: 20px;
+  text-align: center;
+}
+#bt_menu,
+#label_menu {
+  display: none;
+}
+/* tirar bolinhas da lista */
+#menu ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* deixar um prato ao lado do outro */
+#menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#menu a {
+  color: #ffa805;
+  text-decoration: none; /* tira o anderline */
+  font-weight: bolder; /* deixar destacado*/
+}
+
+.titulo-secao {
+  text-align: center;
+  margin-top: 40;
+  color: rgb(6, 6, 6);
+}
+
+/* estrutura inicial da grid*/
+.vitrine-grid {
+  display: grid; /* transforma um elemento HTML em um contêiner de grade bidimensional, permitindo organizar elementos filhos (itens) em linhas e colunas simultaneamente*/
+  grid-template-columns: repeat(3, 1fr);
+  /* quantidade de colunas e tamanho que no maximo é 12fr*/
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #39cc39;
+  padding: 15px;
+  border-radius: 8px; /* arredondar a borda*/
+  text-align: center; /* centralizar o texto*/
+}
+.card img {
+  /*max-width: %; /* ocupa toda largura que tem no quadro*/
+  max-height: 150px; /* altura*/
+  border-radius: 4px;
+}
+
+.img1 img{
+  max-height: 150px;
+}
+
+
+/* Conteudo configuração de preço e botao de pedido*/
+
+.preco {
+  display: block;
+  color: #ff9305;
+  font-weight: bold; /* espessura da fonte e aumenta a fonte*/
+  margin: 10px 0; /* da um espaço e centraliza*/
+}
+
+.bt_pedido {
+  background-color: #adf700;
+  color: #2b2120;
+  border: none; /* tira a borda do botton*/
+  width: 100%;
+  border-radius: 9px;
+  cursor: pointer; /* ao invez de ficar a seta do mause fica a maozinha pra mostrar que é uma botao*/
+  padding: 10px; /* deixa o botao grosso*/
+  
+}
+.bt_pedido:hover {
+  background-color: #0da7b8; /* azul claro */
+} 
+
+#rodape {
+  background-color: #20a516;
+  color: #1c1818;
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center; /* alinha o texto para o centro*/
+}
+
+@media screen {
+  #topo-loja h1 {
+    letter-spacing: 2px; /*altera o espaço entre as letras diminuindo ou aumentando */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* tela computador*/
+  h1 {
+    font-size: 1.2rem; /* tamanho da font*/
+  }
+} /* nao é usual atualmente*/
+
+@media screen and (min-width:601px) and (max-width:1024px) /* tablet na vertical*/ {
+  .vitrine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* telas de celular horizontal e vertical*/
+@media screen and (max-width: 600px), (orientation: portrait) {
+  /* menu hamburger ou retratil/responsivo*/
+  #label_menu {
+    display: block;
+    font-size: 2.5rem;
+    color: rgb(52, 255, 99);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+
+#menu ul {
+  display: none;
+}
+
+/* Verificando se bt-menu  se está clicado e se tem irmão menu */
+#bt_menu:checked ~ #menu ul {
+  display: block; /* horizontal 100% abre o menu*/
+  padding: 10px 0;
+  /* quando tiver checado fique marcado e de um espaço*/
+}
+
+.vitrine-grid {
+  grid-template-columns: 1fr;
+}
+.desc {
+  display: none; /* oculta a descrição quando muda pra celular*/
+}
+
+#menu li {
+  display: block; /* nao fica um do lado do outro ele quebra*/
+  margin: 15px 0;
+  border-bottom: 1px solid #dafb06;
+  padding-bottom: 10px;
+}
+
+/* quando for um print ou impressao*/
+@media not screen {
+    #menu, .bt_pedido, #label_menu, #bt_menu{
+        display: none;
+    }
+    
+}
+
+}
+
