@@ -52,11 +52,11 @@ const botaoReset = document.querySelector("#btn-limpar")
 
 botaoReset.addEventListener("click", () => {
     
-    curtidas = 0// contador zerado
-    mult.textContent = curtidas
+    inputIdade = 0// contador zerado
+    mult.textContent = inputIdade
 
-    campo.value = ""// limpar campo do texto
-    preview.textContent = ""
+    botaoReset.value = ""// limpar campo do texto
+    .textContent = ""
 })
 
 
