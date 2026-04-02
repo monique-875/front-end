@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.css" />
-    <title>TechFood - Exemplo Responsivo Completo</title>
+    <title>TechFood - Sabor & Saber</title>
   </head>
   <body>
     <header id="topo-loja">
       <h1 id="titulo-site">TechFood - Sabor & Saber</h1>
       <p id="boas-vindas">Carregando...</p>
-      <p id="nome"> Seu nome aqui!</p>
 
       <input type="checkbox" id="bt_menu" />
       <label for="bt_menu" id="label-menu">&#9776;</label>
@@ -29,34 +28,35 @@
         <div class="vitrine-grid">
           <article class="card" id="card-lasanha">
             <img
-              src="src/img_2/lasanha_frango.jpg"
+              src="src/images/lasanha.png"
               alt="Lasanha Tech"
               id="foto-destaque"
             />
-            <h3>Lasanha de Frango</h3>
-            <p class="desc">Massa artesanal, lasanha com o molho da casa e um delicioso recheio cremoso além de uma grande abundancia de queijo!.</p>
+            <h3>Lasanha Bolonhesa</h3>
+            <p class="desc">Massa artesanal e molho especial.</p>
 
-            <div class="quantidade">
-              <label for="qtd-lasanha"></label>
-              <input type="number" id="qtd-lasanha" value="1" min="1">
+            <div class="quantidade-box">
+              <label for="qtd-lasanha">Quantidade:</label>
+              <input type="number" id="qtd-lasanha" value="1" min="1" />
             </div>
-            
+
             <span class="preco" id="preco-lasanha">R$ 45,00</span>
+
             <button class="btn-pedido">Pedir Agora</button>
           </article>
 
-          <article class="card" id="card-nhoque">
-            <img src="src/img_2/nhoque.png" alt="Nhoque Tech" />
-            <h3>Nhoque de pesto</h3>
-            <p class="desc">Massa artesanal de batata, com o molho da casa e um delicioso recheio de queijo com temperos especiais da casa! .</p>
+          <article class="card">
+            <img src="src/images/nhoque.png" alt="Nhoque Tech" />
+            <h3>Nhoque ao Pesto</h3>
+            <p class="desc">Batata fresca e manjericão orgânico.</p>
             <span class="preco">R$ 38,00</span>
             <button class="btn-pedido">Pedir Agora</button>
           </article>
 
-          <article id ="card- nhoque" class="card">
-            <img src="src/img_2/espaguete.png" alt="espaguete Tech" />
-            <h3>Espaguete</h3>
-            <p class="desc">Massa artesanal, espaguete com o molho da casa!.</p>
+          <article class="card">
+            <img src="src/images/espaguete.png" alt="Espaguete Tech" />
+            <h3>Espaguete Carbonara</h3>
+            <p class="desc">Receita original italiana.</p>
             <span class="preco">R$ 42,00</span>
             <button class="btn-pedido">Pedir Agora</button>
           </article>
@@ -67,25 +67,25 @@
         <h2 class="titulo-secao">Nossas Sobremesas</h2>
         <div class="vitrine-grid">
           <article class="card">
-            <img src="src/img_2/pudim.jpg" alt="Pudim Tech" />
+            <img src="src/images/pudim.png" alt="Pudim Tech" />
             <h3>Pudim de Leite</h3>
-            <p class="desc">Um classico com calda de caramelo, testura macia que disolve na boca!.</p>
+            <p class="desc">O clássico com calda de caramelo.</p>
             <span class="preco">R$ 15,00</span>
             <button class="btn-pedido">Pedir Agora</button>
           </article>
 
           <article class="card">
-            <img src="src/img_2/brownie.jpg" alt="Brownie Tech" />
+            <img src="src/images/brownie.png" alt="Brownie Tech" />
             <h3>Brownie com Sorvete</h3>
-            <p class="desc">Com chocolate belga e um delicioso sorvete de baunilhaaaa é de derreter na boca.</p>
+            <p class="desc">Chocolate belga 70% cacau.</p>
             <span class="preco">R$ 22,00</span>
             <button class="btn-pedido">Pedir Agora</button>
           </article>
 
           <article class="card">
-            <img src="src/img_2/torta.png" alt="Torta Tech" />
+            <img src="src/images/torta.png" alt="Torta Tech" />
             <h3>Torta de Limão</h3>
-            <p class="desc">Massa crocante com um delicioso recheio refrescante de limão!.</p>
+            <p class="desc">Crocante e refrescante.</p>
             <span class="preco">R$ 18,00</span>
             <button class="btn-pedido">Pedir Agora</button>
           </article>
@@ -99,9 +99,7 @@
         <p>Av. das Nações, 1500</p>
       </div>
     </footer>
-   <!-- <script src="src/scripts/antigo.js"></script>-->
-    <!-- <script src="../../../DOM/scripts/novo.js"></script>  -->
-    <script src="../../scripts/aula6.js"></script>
-<aside></aside>
+
+    <script src="src/scripts/aula6.js"></script>
   </body>
 </html>

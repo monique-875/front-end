@@ -1,132 +1,103 @@
-body { 
+body {
+  background: #f0f2f5;
 
-  background: #f0f2f5; 
+  font-family: sans-serif;
 
-  font-family: sans-serif; 
+  display: flex;
 
-  display: flex; 
+  justify-content: center;
 
-  justify-content: center; 
+  padding: 50px;
+}
 
-  padding: 50px; 
+#container-perfil {
+  background: white;
 
-} 
+  padding: 30px;
 
-#container-perfil { 
+  border-radius: 15px;
 
-  background: white; 
+  text-align: center;
 
-  padding: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-  border-radius: 15px; 
+  width: 300px;
+}
 
-  text-align: center; 
+#foto-perfil {
+  border-radius: 50%;
 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 4px solid #ddd;
 
-  width: 300px; 
+  margin-bottom: 15px;
 
-} 
+  width: 150px;
+}
 
-#foto-perfil { 
+.biografia {
+  color: #666;
 
-  border-radius: 50%; 
+  font-size: 0.9rem;
 
-  border: 4px solid #ddd; 
+  margin: 10px 0;
+}
 
-  margin-bottom: 15px; 
+#lista-skills {
+  list-style: none;
 
-  width: 150px; 
+  padding: 0;
 
-} 
+  display: flex;
 
-.biografia { 
+  gap: 10px;
 
-  color: #666; 
+  justify-content: center;
 
-  font-size: 0.9rem; 
+  margin-top: 15px;
+}
 
-  margin: 10px 0; 
+.skill {
+  background: #018be7;
 
-} 
+  color: #ffffff;
 
-#lista-skills { 
+  padding: 5px 10px;
 
-  list-style: none; 
+  border-radius: 5px;
 
-  padding: 0; 
+  font-size: 0.8rem;
+}
 
-  display: flex; 
+.online {
+  background: #27ae60 !important;
 
-  gap: 10px; 
+  color: white;
 
-  justify-content: center; 
+  font-weight: bold;
+}
 
-  margin-top: 15px; 
+#badge-status {
+  display: inline-block;
 
-} 
+  padding: 5px 10px;
 
-.skill { 
+  border-radius: 5px;
+}
 
-  background: #018be7; 
+#foto-perfil {
+  width: 150px;
 
-  color: #ffffff; 
+  height: 150px; /* comando que deixa a imagem redonda */
 
-  padding: 5px 10px; 
+  border-radius: 50%;
 
-  border-radius: 5px; 
+  border: 4px solid #ddd;
 
-  font-size: 0.8rem; 
+  margin-bottom: 15px;
 
-} 
+  object-fit: cover; /* deixa a imagem bem encaixada */
 
-.online { 
+  border: 4px solid #fff;
 
-  background: #27ae60 !important; 
-
-  color: white; 
-
-  font-weight: bold; 
-
-} 
-
-
- 
-
-#badge-status { 
-
-  display: inline-block; 
-
-  padding: 5px 10px; 
-
-  border-radius: 5px; 
-
-} 
-
- 
-
-#foto-perfil { 
-
-  width: 150px; 
-
-  height: 150px; /* comando que deixa a imagem redonda */ 
-
-  border-radius: 50%; 
-
-  border: 4px solid #ddd; 
-
-  margin-bottom: 15px; 
-
-  object-fit: cover; /* deixa a imagem bem encaixada */ 
-
- 
-
-  border: 4px solid #fff; 
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-
-}/* deixa a imagem redonda e nao oval*/ 
-
- 
-
- 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} /* deixa a imagem redonda e nao oval*/
