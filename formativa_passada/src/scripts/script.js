@@ -52,15 +52,15 @@ const botaoReset = document.querySelector("#btn-limpar")
 
 botaoReset.addEventListener("click", () => {
     
-    inputIdade = 0// contador zerado
+    inputIdade = 0
     mult.textContent = inputIdade
 
-    botaoReset.value = ""// limpar campo do texto
+    botaoReset.value = "" 
     .textContent = ""
 })
 
 
-// segunda forma 
+// segunda tentativa
 
 // const inputIdade = document.querySelector("#idade-pet");
 // const resultadoIdade = document.querySelector("#txt-resultado strong");
