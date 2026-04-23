@@ -89,7 +89,7 @@ header h1 {
 /* Missão 1 e 2: Ponto de quebra para TABLETS (Largura máxima de 768px) */
 /* Dica M2: Capture a .grid-pacotes e altere as colunas do template para repetir apenas 2 vezes (1fr) */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: portrait) {
     .grid-pacotes {
         grid-template-columns: 1fr 1fr;
     }
